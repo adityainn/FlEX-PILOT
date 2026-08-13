@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Flex Pilot (FlEX-PILOT)
+
+Flex Pilot is an AI-powered accessibility engineer that automatically scans web apps, identifies WCAG issues, maps them to source code, generates AI-driven fixes, verifies improvements with Playwright and Axe-core, and creates GitHub Pull Requests. It transforms accessibility testing from a manual process into an autonomous, end-to-end workflow.
+
+## Key Features
+- **Cinematic & Interactive Demos**: Autoplay presentation pipelines and sandbox simulations.
+- **Axe-core Scanning**: Auto-detection of DOM hierarchy violations.
+- **Source Code Mapping**: React AST analysis linking components to code locations.
+- **Automated Fix Generation**: Smart typewritten patches tailored to repair WCAG violations.
+- **Verification Loop**: Clean regression validation ensuring builds pass WCAG without regressions.
+- **GitHub Pull Request Delivery**: Programmatic commits and pull requests detailing the score delta.
 
 ## Getting Started
 
-First, run the development server:
-
+### 1. Start the Backend API
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd backend
+source venv/bin/activate
+python3 main.py
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Start the Dev Server
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open [http://localhost:3000](http://localhost:3000) with your browser to experience the dashboard and interactive showcase.

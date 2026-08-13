@@ -1,0 +1,17 @@
+[
+  {
+    "id": "run-1",
+    "projectId": "proj-1",
+    "branch": "main",
+    "status": "completed",
+    "startTime": 1699996400000,
+    "durationMs": 14500,
+    "metrics": {
+      "initialScore": 72,
+      "finalScore": 98,
+      "issuesFound": 146,
+      "issuesFixed": 83,
+      "regressionRisk": "low"
+    }
+  }
+]

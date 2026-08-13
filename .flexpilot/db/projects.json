@@ -1,0 +1,12 @@
+[
+  {
+    "id": "proj-1",
+    "workspaceId": "ws-1",
+    "name": "demo-react-store",
+    "repositoryUrl": "https://github.com/acme/demo-react-store",
+    "framework": "Next.js",
+    "packageManager": "npm",
+    "hasTypeScript": true,
+    "createdAt": 1700000000000
+  }
+]
