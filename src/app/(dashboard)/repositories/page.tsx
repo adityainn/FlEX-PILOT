@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/table";
 import { FolderGit2, Search, Settings2, GitBranch, Plus, Loader2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
+
 import { Repository } from "@/lib/mock-data";
 import {
   Dialog,
@@ -258,12 +258,12 @@ export default function RepositoriesPage() {
               repos.map((repo) => (
                 <TableRow key={repo.id} className="border-b border-zinc-900 hover:bg-zinc-900/20 transition-colors">
                   <TableCell>
-                    <Link href={repo.url} target="_blank" className="flex items-center gap-3">
+                    <a href={repo.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3">
                       <div className="p-2 rounded-md bg-primary/10 text-primary">
                         <FolderGit2 className="h-4 w-4" />
                       </div>
                       <span className="font-medium hover:underline text-zinc-100">{repo.name}</span>
-                    </Link>
+                    </a>
                   </TableCell>
                   <TableCell>
                     <div className="flex items-center gap-2 text-muted-foreground text-zinc-400">

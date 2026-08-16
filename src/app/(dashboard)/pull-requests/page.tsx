@@ -94,10 +94,10 @@ export default function PullRequestsPage() {
                     )}
                   </div>
                   <div>
-                    <Link href={pr.url} target="_blank" className="font-semibold text-base hover:text-primary transition-colors flex items-center gap-2">
+                    <a href={pr.url} target="_blank" rel="noopener noreferrer" className="font-semibold text-base hover:text-primary transition-colors flex items-center gap-2">
                       {pr.title}
                       <ExternalLink className="h-3 w-3 text-muted-foreground" />
-                    </Link>
+                    </a>
                     <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
                       <span className="font-medium text-foreground">{repo?.name || pr.repositoryId}</span>
                       <span>•</span>
@@ -115,7 +115,7 @@ export default function PullRequestsPage() {
                   </Badge>
                   {pr.status === "open" && (
                     <Button size="sm" variant="outline">
-                      <Link href={pr.url} target="_blank">Review</Link>
+                      <a href={pr.url} target="_blank" rel="noopener noreferrer">Review</a>
                     </Button>
                   )}
                 </div>
